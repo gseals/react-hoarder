@@ -4,6 +4,11 @@ import {
 } from 'react-router-dom';
 import './App.scss';
 
+import firebase from 'firebase/app';
+import 'firebase/auth';
+
+import firebaseConnection from '../helpers/data/connection';
+
 import Auth from '../components/pages/Auth/Auth';
 import Home from '../components/pages/Home/Home';
 import SingleBoard from '../components/pages/SingleBoard/SingleBoard';
@@ -17,6 +22,8 @@ const PrivateRoute = ({ component: Component, authed, ...rest }) => {
   const routeChecker = (props) => (authed === true ? <Component {...props} {...rest}/> : <Redirect to={{ pathname: '/auth', state: { from: props.location } }} />);
   return <Route {...rest} render={(props) => routeChecker(props)} />;
 };
+
+firebaseConnection();
 
 class App extends React.Component {
   state = {
