@@ -8,7 +8,7 @@ class SingleStuff extends React.Component {
     return (
       <div className="SingleStuff">
         <h1>Single Stuff</h1>
-        <h2>Current Board Id is {boardId}</h2>
+        {/* <h2>Current Board Id is {boardId}</h2> */}
       </div>
     );
   }
