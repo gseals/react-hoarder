@@ -2,6 +2,9 @@ import React from 'react';
 
 import './SingleStuff.scss';
 
+import itemsData from '../../../helpers/data/itemsData';
+
+
 class SingleStuff extends React.Component {
   render() {
     const { boardId } = this.props.match.params;
