@@ -7,19 +7,18 @@ import './AllItems.scss';
 
 class AllItems extends React.Component {
   static propTypes = {
-    item: itemShape.itemShape,
+    items: itemShape.itemShape,
   }
 
   render() {
-    const { item } = this.props;
-    const { boardId } = this.props.match.params;
+    const { items } = this.props;
     return (
       <div className="AllItems col-4 mb-3">
         <div className="card">
           <div className="card-body">
-          <img src={item.itemImage} className="card-img-top" alt=""/>
-            <h5 className="card-title">{item.itemName}</h5>
-            <Link className="btn btn-primary" to={`/stuff/:boardId/${item.id}`}>See more</Link>
+          <img src={items.itemImage} className="card-img-top" alt=""/>
+            <h5 className="card-title">{items.itemName}</h5>
+            <Link className="btn btn-primary" to={`/stuff/12345/${items.id}`}>See more</Link>
           </div>
         </div>
       </div>
