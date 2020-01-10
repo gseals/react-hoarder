@@ -12,8 +12,10 @@ import MyNavBar from '../components/shared/MyNavBar/MyNavBar';
 
 import Auth from '../components/pages/Auth/Auth';
 import Home from '../components/pages/Home/Home';
-import SingleBoard from '../components/pages/SingleBoard/SingleBoard';
-import NewBoard from '../components/pages/NewBoard/NewBoard';
+import NewStuff from '../components/pages/NewStuff/NewStuff';
+import MyStuff from '../components/pages/MyStuff/MyStuff';
+import SingleStuff from '../components/pages/SingleStuff/SingleStuff';
+import Edit from '../components/pages/Edit/Edit';
 
 const PublicRoute = ({ component: Component, authed, ...rest }) => {
   const routeChecker = (props) => (authed === false ? <Component {...props} {...rest}/> : <Redirect to={{ pathname: '/', state: { from: props.location } }} />);
@@ -53,9 +55,12 @@ class App extends React.Component {
           <MyNavBar authed={authed} />
           <Switch>
             <PrivateRoute path="/" exact component={Home} authed={authed} />
-            <PrivateRoute path="/board/new" exact component={NewBoard} authed={authed} />
+            <PrivateRoute path="/home" exact component={Home} authed={authed} />
+            <PrivateRoute path="/stuff/new" exact component={NewStuff} authed={authed} />
+            <PrivateRoute path="/stuff/" exact component={MyStuff} authed={authed} />
             <PublicRoute path="/auth" exact component={Auth} authed={authed}/>
-            <PrivateRoute path="/board/:boardId" exact component={SingleBoard} authed={authed} />
+            <PrivateRoute path="/stuff/:boardId" exact component={SingleStuff} authed={authed} />
+            <PrivateRoute path="/stuff/:boardId/edit" exact component={Edit} authed={authed} />
           </Switch>
         </Router>
       </div>
