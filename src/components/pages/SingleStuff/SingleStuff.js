@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './SingleStuff.scss';
 
 import itemsData from '../../../helpers/data/itemsData';
@@ -7,7 +6,6 @@ import itemsData from '../../../helpers/data/itemsData';
 class SingleStuff extends React.Component {
   state = {
     item: [],
-    deleteItemData: PropTypes.func,
   }
 
   getSingleItemData = (itemId) => {
@@ -22,6 +20,19 @@ class SingleStuff extends React.Component {
     this.getSingleItemData(this.props.match.params.itemPathId);
   }
 
+  handleDelete = (e) => {
+    e.preventDefault();
+    itemsData.deleteItemData(this.props.match.params.itemPathId)
+      .then((response) => {
+        this.props.history.push('/stuff/');
+      })
+      .catch((err) => console.error('error from from deleting items', err));
+  }
+
+  // handleRedirect = () => {
+  //   this.props.hs
+  // }
+
   render() {
     const { item } = this.state;
     return (
@@ -33,6 +44,7 @@ class SingleStuff extends React.Component {
         <img src={item.itemImage} className="card-img-top" alt=""/>
           <h5 className="card-title">{item.itemName}</h5>
           <p className="card-text">{item.itemDescription}</p>
+          <button className="btn btn-danger" onClick={this.handleDelete}>Presto, deleto</button>
           </div>
           </div>
         </div>
