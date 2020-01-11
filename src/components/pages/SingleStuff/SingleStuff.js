@@ -11,16 +11,19 @@ class SingleStuff extends React.Component {
 
   getSingleItemData = (itemId) => {
     itemsData.getSingleItem(itemId)
-      .then((item) => this.setState({ item }))
+      .then((item) => {
+        this.setState({ item: item.data });
+      })
       .catch((err) => console.error('error in get items'));
   }
 
   componentDidMount() {
-    this.getSingleItemData();
+    this.getSingleItemData(this.props.match.params.itemPathId);
   }
 
   render() {
     const { item } = this.state;
+    { console.log(item); }
     return (
       <div className="SingleStuff">
         <h1>Single Stuff</h1>

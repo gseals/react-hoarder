@@ -11,7 +11,7 @@ class SingleItem extends React.Component {
 
   render() {
     const { item } = this.props;
-    const itemPathId = '12345';
+    const itemPathId = this.props.item.id;
     return (
       <div className="SingleItem col-4 mb-3">
       <div className="card">
