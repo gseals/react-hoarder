@@ -38,26 +38,3 @@ class MyStuff extends React.Component {
 }
 
 export default MyStuff;
-
-
-// componentDidMount() {
-//   const { itemPathId } = this.props.match.params;
-//   itemsData.getSingleItem(itemPathId)
-//     .then((response) => {
-//       this.setState({ items: response.data });
-//       this.getItems(itemPathId);
-//     })
-//     .catch((err) => console.error('error in get single board', err));
-// }
-
-// render() {
-//   const itemPathId = '12345';
-//   return (
-//     <div className="MyStuff">
-//       <h1>My Stuff</h1>
-//       <Link className="btn btn-secondary" to={`/stuff/${itemPathId}/edit`}>Edit</Link>
-//       <Link className="btn btn-primary" to={`/stuff/${itemPathId}`}>Single</Link>
-//       <SingleItem />
-//     </div>
-//   );
-// }

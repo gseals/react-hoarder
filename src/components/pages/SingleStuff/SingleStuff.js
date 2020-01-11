@@ -29,10 +29,6 @@ class SingleStuff extends React.Component {
       .catch((err) => console.error('error from from deleting items', err));
   }
 
-  // handleRedirect = () => {
-  //   this.props.hs
-  // }
-
   render() {
     const { item } = this.state;
     return (

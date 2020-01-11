@@ -11,7 +11,7 @@ class SingleItem extends React.Component {
     deleteItem: PropTypes.func,
   }
 
-  deleteItemEvent = (e) => {
+  handleDeleteEvent = (e) => {
     e.preventDefault();
     const { deleteItem, item } = this.props;
     deleteItem(item.id);
@@ -26,8 +26,7 @@ class SingleItem extends React.Component {
         <div className="card-body">
         <img src={item.itemImage} className="card-img-top" alt=""/>
           <h5 className="card-title">{item.itemName}</h5>
-          {/* <p className="card-text">{item.itemDescription}</p> */}
-        <button className="btn btn-danger" onClick={this.deleteItemEvent}>X</button>
+        <button className="btn btn-danger" onClick={this.handleDeleteEvent}>X</button>
         <Link className="btn btn-secondary" to={`/stuff/${itemPathId}/edit`}>Edit</Link>
         <Link className="btn btn-primary" to={`/stuff/${itemPathId}`}>Single</Link>
         </div>
