@@ -59,8 +59,8 @@ class App extends React.Component {
             <PrivateRoute path="/stuff/new" exact component={NewStuff} authed={authed} />
             <PrivateRoute path="/stuff/" exact component={MyStuff} authed={authed} />
             <PublicRoute path="/auth" exact component={Auth} authed={authed}/>
-            <PrivateRoute path="/stuff/:boardId" exact component={SingleStuff} authed={authed} />
-            <PrivateRoute path="/stuff/:boardId/edit" exact component={Edit} authed={authed} />
+            <PrivateRoute path="/stuff/:itemPathId" exact component={SingleStuff} authed={authed} />
+            <PrivateRoute path="/stuff/:itemPathId/edit" exact component={Edit} authed={authed} />
           </Switch>
         </Router>
       </div>
