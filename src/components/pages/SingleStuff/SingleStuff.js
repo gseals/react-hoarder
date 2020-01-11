@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import './SingleStuff.scss';
 
 import itemsData from '../../../helpers/data/itemsData';
@@ -7,6 +7,7 @@ import itemsData from '../../../helpers/data/itemsData';
 class SingleStuff extends React.Component {
   state = {
     item: [],
+    deleteItemData: PropTypes.func,
   }
 
   getSingleItemData = (itemId) => {
@@ -23,7 +24,6 @@ class SingleStuff extends React.Component {
 
   render() {
     const { item } = this.state;
-    { console.log(item); }
     return (
       <div className="SingleStuff">
         <h1>Single Stuff</h1>
