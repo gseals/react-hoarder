@@ -19,6 +19,7 @@ class SingleItem extends React.Component {
         <img src={item.itemImage} className="card-img-top" alt=""/>
           <h5 className="card-title">{item.itemName}</h5>
           {/* <p className="card-text">{item.itemDescription}</p> */}
+        <button className="btn btn-danger">X</button>
         <Link className="btn btn-secondary" to={`/stuff/${itemPathId}/edit`}>Edit</Link>
         <Link className="btn btn-primary" to={`/stuff/${itemPathId}`}>Single</Link>
         </div>

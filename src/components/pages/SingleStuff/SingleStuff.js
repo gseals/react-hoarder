@@ -3,8 +3,6 @@ import React from 'react';
 import './SingleStuff.scss';
 
 import itemsData from '../../../helpers/data/itemsData';
-import SingleItem from '../../shared/SingleItem/SingleItem';
-import authData from '../../../helpers/data/authData';
 
 class SingleStuff extends React.Component {
   state = {
@@ -26,9 +24,15 @@ class SingleStuff extends React.Component {
     return (
       <div className="SingleStuff">
         <h1>Single Stuff</h1>
-        <div className="item d-flex flex-wrap"></div>
-        <h1>{item.itemName}</h1>
-        <p>{item.itemDescription}</p>
+        <div className="item text-center">
+        <div className="card">
+        <div className="card-body">
+        <img src={item.itemImage} className="card-img-top" alt=""/>
+          <h5 className="card-title">{item.itemName}</h5>
+          <p className="card-text">{item.itemDescription}</p>
+          </div>
+          </div>
+        </div>
         </div>
     );
   }
