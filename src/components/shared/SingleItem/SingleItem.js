@@ -27,8 +27,8 @@ class SingleItem extends React.Component {
         <img src={item.itemImage} className="card-img-top" alt=""/>
           <h5 className="card-title">{item.itemName}</h5>
         <button className="btn btn-danger" onClick={this.handleDeleteEvent}>X</button>
-        <Link className="btn btn-secondary" to={`/stuff/${itemPathId}/edit`}>Edit</Link>
-        <Link className="btn btn-primary" to={`/stuff/${itemPathId}`}>Single</Link>
+        <Link className="btn btn-secondary" to={`/stuff/${itemPathId}/edit`}>Update</Link>
+        <Link className="btn btn-primary" to={`/stuff/${itemPathId}`}>View</Link>
         </div>
       </div>
     </div>
