@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './SingleStuff.scss';
 
 import itemsData from '../../../helpers/data/itemsData';
@@ -31,6 +33,7 @@ class SingleStuff extends React.Component {
 
   render() {
     const { item } = this.state;
+    const { itemPathId } = this.props.match.params;
     return (
       <div className="SingleStuff">
         <h1>Single Stuff</h1>
@@ -40,6 +43,7 @@ class SingleStuff extends React.Component {
         <img src={item.itemImage} className="card-img-top" alt=""/>
           <h5 className="card-title">{item.itemName}</h5>
           <p className="card-text">{item.itemDescription}</p>
+          <Link className="btn btn-secondary" to={`/stuff/${itemPathId}/edit`}>Update</Link>
           <button className="btn btn-danger" onClick={this.handleDelete}>Presto, deleto</button>
           </div>
           </div>
