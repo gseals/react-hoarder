@@ -28,7 +28,7 @@ class SingleItem extends React.Component {
           <h5 className="card-title">{item.itemName}</h5>
         <button className="btn btn-danger" onClick={this.handleDeleteEvent}>X</button>
         <Link className="btn btn-secondary" to={`/stuff/${itemPathId}/edit`}>Update</Link>
-        <Link className="btn btn-primary" to={`/stuff/${itemPathId}`}>View</Link>
+        <Link className="btn btn-primary" to={`/stuff/${itemPathId}`}>Single</Link>
         </div>
       </div>
     </div>
