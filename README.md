@@ -13,7 +13,7 @@ You have a lot of stuff. Where are you gonna keep all of your stuff.
 * ES6 modules
 * Firebase
 * Webpack
-* React
+* React Routing
 
 ## Screenshot(s)
 
@@ -33,7 +33,7 @@ Edit
 ![Edit](https://raw.githubusercontent.com/gseals/react-hoarder/master/src/assets/edit.png)
 
 Single Stuff
-![Single Stuff](https://raw.githubusercontent.com/gseals/react-hoarder/master/src/assets/single.png)
+![Single Stuff](https://raw.githubusercontent.com/gseals/react-hoarder/master/src/assets/updateSingle.png)
 
 ## Instructions for how to run the project
 
