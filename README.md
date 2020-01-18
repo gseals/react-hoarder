@@ -18,22 +18,22 @@ You have a lot of stuff. Where are you gonna keep all of your stuff.
 ## Screenshot(s)
 
 Logged out
-![Logged out](https://raw.githubusercontent.com/gseals/personal-bio-site/master/screenshots/intro.png)
+![Logged out](https://raw.githubusercontent.com/gseals/react-hoarder/master/src/assets/loggedOut.png)
 
 Logged in
-![Logged in](https://raw.githubusercontent.com/gseals/personal-bio-site/master/screenshots/bio.png)
+![Logged in](https://raw.githubusercontent.com/gseals/react-hoarder/master/src/assets/loggedIn.png)
 
 Add New
-![Add New](https://raw.githubusercontent.com/gseals/personal-bio-site/master/screenshots/tech.png)
+![Add New](https://raw.githubusercontent.com/gseals/react-hoarder/master/src/assets/new.png)
 
 My Stuff
-![My Stuff](https://raw.githubusercontent.com/gseals/personal-bio-site/master/screenshots/proj.png)
+![My Stuff](https://raw.githubusercontent.com/gseals/react-hoarder/master/src/assets/stuff.png)
 
 Edit
-![Edit](https://raw.githubusercontent.com/gseals/personal-bio-site/master/screenshots/tech.png)
+![Edit](https://raw.githubusercontent.com/gseals/react-hoarder/master/src/assets/edit.png)
 
 Single Stuff
-![Single Stuff](https://raw.githubusercontent.com/gseals/personal-bio-site/master/screenshots/proj.png)
+![Single Stuff](https://raw.githubusercontent.com/gseals/react-hoarder/master/src/assets/single.png)
 
 ## Instructions for how to run the project
 
