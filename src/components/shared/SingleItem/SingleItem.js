@@ -22,7 +22,7 @@ class SingleItem extends React.Component {
     const itemPathId = this.props.item.id;
     return (
       <div className="SingleItem col-4 mb-3">
-      <div className="card">
+      <div className="card h-100">
         <div className="card-body">
         <img src={item.itemImage} className="card-img-top" alt=""/>
           <h5 className="card-title">{item.itemName}</h5>

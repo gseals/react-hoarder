@@ -42,9 +42,9 @@ class NewStuff extends React.Component {
   render() {
     const { itemName, itemImage, itemDescription } = this.state;
     return (
-      <form className="NewStuff">
+      <form className="NewStuff col-6 m-auto">
         <div className="form-group">
-          <label htmlFor="item-name">Item Name</label>
+          <h3><label htmlFor="item-name">Item Name</label></h3>
           <input
           type="text"
           className="form-control"
@@ -55,7 +55,7 @@ class NewStuff extends React.Component {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="item-image">Item Image</label>
+          <h3><label htmlFor="item-image">Item Image</label></h3>
           <input
           type="text"
           className="form-control"
@@ -66,7 +66,7 @@ class NewStuff extends React.Component {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="item-description">Item Description</label>
+          <h3><label htmlFor="item-description">Item Description</label></h3>
           <input
           type="text"
           className="form-control"
