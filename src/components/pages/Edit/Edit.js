@@ -56,9 +56,9 @@ class Edit extends React.Component {
     const { itemName, itemImage, itemDescription } = this.state;
 
     return (
-      <form className="Edit">
+      <form className="Edit col-6 m-auto">
        <div className="form-group">
-         <label htmlFor="item-name-edit">Update Name</label>
+         <h3><label htmlFor="item-name-edit">Update Name</label></h3>
          <input
          type="text"
          className="form-control"
@@ -68,7 +68,7 @@ class Edit extends React.Component {
          onChange={this.itemNameChange}
         />
         <div className="form-group">
-          <label htmlFor="item-image-edit">Update Image</label>
+          <h3><label htmlFor="item-image-edit">Update Image</label></h3>
           <input
           type="text"
           className="form-control"
@@ -78,7 +78,7 @@ class Edit extends React.Component {
           onChange={this.itemImageChange}
           />
           <div className="form-group">
-            <label htmlFor="item-description-edit">Update Item Description</label>
+            <h3><label htmlFor="item-description-edit">Update Item Description</label></h3>
             <input
             type="text"
             className="form-control"
