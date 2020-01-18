@@ -88,7 +88,7 @@ class Edit extends React.Component {
             onChange={this.itemDescriptionChange}
             />
           </div>
-          <button className="btn btn-success" onClick={this.editItemEvent}>Update Item</button>
+          <button className="btn btn-success" onClick={this.editItemEvent}>Save</button>
         </div>
        </div>
       </form>
