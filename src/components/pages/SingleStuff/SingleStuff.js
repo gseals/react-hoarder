@@ -35,7 +35,7 @@ class SingleStuff extends React.Component {
     const { item } = this.state;
     const { itemPathId } = this.props.match.params;
     return (
-      <div className="SingleStuff">
+      <div className="SingleStuff container col-6 m-auto">
         <h1>Single Stuff</h1>
         <div className="item text-center">
         <div className="card">

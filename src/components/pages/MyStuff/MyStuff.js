@@ -29,7 +29,7 @@ class MyStuff extends React.Component {
     return (
       <div className="MyStuff">
         <h1>My Stuff</h1>
-        <div className="item d-flex flex-wrap">
+        <div className="item container d-flex flex-wrap">
           { this.state.items.map((item) => <SingleItem key={item.id} item={item} deleteItem={this.deleteItem} />)}
         </div>
       </div>
