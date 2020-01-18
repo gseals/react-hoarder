@@ -37,7 +37,7 @@ Single Stuff
 
 ## Instructions for how to run the project
 
-* Clone down this project from [Github](https://github.com/gseals/personal-bio-site).
+* Clone down this project from [Github](https://github.com/gseals/react-hoarder).
 * Install [http-server](https://www.npmjs.com/package/http-server) from npm.
 * At the root of this project, run the following command: `hs -p 8888`.
 * In your browser, navigate to `https://localhost:8888`;
