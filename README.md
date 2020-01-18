@@ -27,7 +27,7 @@ Add New
 ![Add New](https://raw.githubusercontent.com/gseals/react-hoarder/master/src/assets/new.png)
 
 My Stuff
-![My Stuff](https://raw.githubusercontent.com/gseals/react-hoarder/master/src/assets/stuff.png)
+![My Stuff](https://raw.githubusercontent.com/gseals/react-hoarder/master/src/assets/updateStuff.png)
 
 Edit
 ![Edit](https://raw.githubusercontent.com/gseals/react-hoarder/master/src/assets/edit.png)
