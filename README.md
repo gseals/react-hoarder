@@ -1,5 +1,6 @@
 # React-Hoarder
 
+This project created using [Create React App](https://github.com/facebook/create-react-app)
 
 ## Description
 
@@ -34,6 +35,10 @@ Edit
 
 Single Stuff
 ![Single Stuff](https://raw.githubusercontent.com/gseals/react-hoarder/master/src/assets/updateSingle.png)
+
+## Deployed Site/Demo
+
+[Preview the app here](https://react-hoarder-d8307.firebaseapp.com)
 
 ## Instructions for how to run the project
 
